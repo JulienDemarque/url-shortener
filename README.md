@@ -8,6 +8,7 @@ https://happypanda-url-shortener.herokuapp.com/
 #### Creation Example:
 
 POST https://happypanda-url-shortener.herokuapp.com/api/shorturl/new - body (urlencoded) : url=http://forum.freecodecamp.com
+
 Note: you can just use the form in the app for that.
 
 #### Usage:
