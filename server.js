@@ -17,9 +17,7 @@ const port = process.env.PORT || 3000;
 /** this project needs a db !! **/
 
 //mongoose.connect(process.env.MONGOLAB_URI);
-mongoose.connect(
-  "mongodb://juliendemarque:voodoo1@ds261521.mlab.com:61521/happypanda-url-shortener"
-);
+mongoose.connect(process.env.URLSHORTENERDATABASEURL);
 
 app.use(cors());
 app.use(bodyParser.json());
