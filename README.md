@@ -1,20 +1,18 @@
 # API Project: URL Shortener Microservice for freeCodeCamp
 
+After you submit a valid url, you will receive a json object with the short url, note it down and you can use it anywhere you want!
 
-### User Stories
-
-1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
-2. If I pass an invalid URL that doesn't follow the valid `http(s)://www.example.com(/more/routes)` format, the JSON response will contain an error like `{"error":"invalid URL"}`. *HINT*: to be sure that the submitted url points to a valid site you can use the function `dns.lookup(host, cb)` from the `dns` core module.
-3. When I visit the shortened URL, it will redirect me to my original link.
-
+See the app running here:
+https://happypanda-url-shortener.herokuapp.com/
 
 #### Creation Example:
 
-POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.google.com
+POST https://happypanda-url-shortener.herokuapp.com/api/shorturl/new - body (urlencoded) : url=http://forum.freecodecamp.com
+Note: you can just use the form in the app for that.
 
 #### Usage:
 
-[this_project_url]/api/shorturl/3
+https://happypanda-url-shortener.herokuapp.com/api/shorturl/0
 
 #### Will redirect to:
 
